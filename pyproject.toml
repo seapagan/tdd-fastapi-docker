@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "tdd-fastapi-docker"
+version = "0.1.0"
+description = "Learning TDD with FastAPI and Docker"
+authors = ["Grant Ramsay <seapagan@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "tdd_fastapi_docker" }]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4.0"
+fastapi = "^0.88.0"
+uvicorn = "^0.20.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+flake8 = "^6.0.0"
+pylint = "^2.15.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
