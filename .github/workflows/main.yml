@@ -75,6 +75,6 @@ jobs:
       - name: Flake8
         run: docker exec fastapi-tdd python -m flake8 .
       - name: Black
-        run: docker exec fastapi-tdd python -m black . --check
+        run: docker exec fastapi-tdd python -m black . --check --line-length=80
       - name: isort
         run: docker exec fastapi-tdd python -m isort . --check-only
