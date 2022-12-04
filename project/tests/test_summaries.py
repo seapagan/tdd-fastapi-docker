@@ -7,7 +7,7 @@ TEST_URL = "https://foo.bar"
 
 def test_create_summary(test_app_with_db):
     response = test_app_with_db.post(
-        "/summaries/", data=json.dumps({"url": TEST_URL})
+        "/summaries/", data=json.dumps({"url": TEST_URL})  # NOSONAR
     )
 
     assert response.status_code == 201
