@@ -13,6 +13,10 @@ def test_create_summary(test_app, monkeypatch):
     async def mock_post(payload):
         return 1
 
+    def mock_generate_summary(summary_id, url):
+        return None
+
+    monkeypatch.setattr(summaries, "generate_summary", mock_generate_summary)
     monkeypatch.setattr(crud, "post", mock_post)
 
     response = test_app.post(
