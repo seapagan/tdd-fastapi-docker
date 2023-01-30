@@ -12,7 +12,7 @@ python = ">=3.8.1,<4.0"
 fastapi = "^0.88.0"
 uvicorn = { extras = ["standard"], version = "^0.20.0" }
 asyncpg = "^0.27.0"
-tortoise-orm = "^0.19.2"
+tortoise-orm = "^0.19.3"
 aerich = "^0.7.1"
 requests = "^2.28.1"
 httpx = "^0.23.1"
