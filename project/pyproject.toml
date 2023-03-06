@@ -22,7 +22,7 @@ newspaper3k = "^0.2.8"
 
 
 [tool.poetry.group.dev.dependencies]
-black = "^22.10.0"
+black = "^23.1.0"
 flake8 = "^6.0.0"
 pylint = "^2.15.6"
 httpie = "^3.2.1"
